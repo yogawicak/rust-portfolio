@@ -4,6 +4,7 @@ struct Rectangle {
 }
 
 impl Rectangle {
+    // common way the self is using reference
     fn area(&self) -> u32 {
         self.width * self.height
     }
@@ -15,8 +16,14 @@ impl Rectangle {
 
 #[test]
 fn test_method() {
-    let rect1 = Rectangle { width: 30, height: 50 };
-    let rect2 = Rectangle { width: 10, height: 40 };
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+    let rect2 = Rectangle {
+        width: 10,
+        height: 40,
+    };
 
     println!("Area: {}", rect1.area());
     println!("Can hold: {}", rect1.can_hold(&rect2));

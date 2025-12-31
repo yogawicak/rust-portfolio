@@ -11,6 +11,7 @@ pub mod comparing;
 pub mod comparison_operators;
 pub mod constant;
 pub mod crate_system;
+pub mod dangling_pointer;
 pub mod data_type;
 pub mod dereference;
 pub mod enum_type;
